@@ -1,0 +1,104 @@
+/*page-selection stylesheet*/
+body {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url("https://cdn.glitch.global/c404e7e0-5a28-4a5f-bc05-c17110073fbd/PortfolioBackgroundImageCopy.PNG?v=1748547738825")
+    no-repeat center center;
+  background-size: cover;
+}
+
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 120px;
+  width: 100px;
+  justify-content: center;
+}
+.app-wrapper:hover {
+  transform: scale(1.15);
+}
+
+.app-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  font-size: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.icon-label {
+  margin-top: 0.5rem;
+  font-size: 70%;
+  color: black;
+  font-family: "Sixtyfour", sans-serif;
+  font-weight: bold;
+}
+.resource-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 18px;
+}
+.back-button {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem auto;
+  text-decoration: none;
+  color: black;
+  font-family: "Sixtyfour", sans-serif;
+  font-size: 0.9rem;
+}
+
+
+.pong-container {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38vw; /* proportional to image width */
+  height: 31vw; /* same aspect ratio as original 250x165 */
+  padding: 2vw;
+  overflow-y: auto;
+  border-radius: 0.5vw;
+}
+
+.pong-ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background:hsl(133 55% 31.3%);
+  border-radius: 50%;
+  animation: bounce 3s linear infinite alternate;
+}
+
+@keyframes bounce {
+  0%   { top: 10%; left: 40%; }
+  20%  { top: 20%; left: 60%; }
+  40%  { top: 95%; left: 60%; }
+  60%  { top: 62%; left: 33%; }
+  80%  { top: 30%; left: 90%; }
+  100% { top: 10%; left: 10%; }
+}

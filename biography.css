@@ -1,0 +1,97 @@
+body {
+  color: black;
+  min-height: 100vh;
+  margin: 0;
+  background: url("https://cdn.glitch.global/c404e7e0-5a28-4a5f-bc05-c17110073fbd/PortfolioBackgroundImageCopy.PNG?v=1748547738825")
+    no-repeat center center;
+  background-size: cover;
+  font-family: "Sixtyfour", sans-serif;
+}
+
+
+.scaled-container::-webkit-scrollbar {
+  height: 6px;
+  background: transparent;
+}
+.scaled-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.scaled-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bio-header {
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+.image-slider {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 1rem;
+  justify-items: center;
+  scroll-behavior: smooth;
+  min-height:200px;
+  overflow-y: hidden;
+}
+
+.image-slider::-webkit-scrollbar {
+  height: 6px;
+  background: transparent;
+}
+
+.image-slider::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.image-slider::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+.thumbnail-grid {
+  display: inline-flex;
+  overflow-x: auto;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+
+.thumbnail-grid img {
+  flex-shrink:0;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+
+
+
+.bio-layout{
+  display:grid;
+  direction: row; 
+  gap: 2rem;
+  align-items: center;
+}
+
+
+.bio-paragraphs{
+  margin-bottom: 1rem;
+  text-align:space-between;
+  margin-top:1px;
+  line-height:1.6;
+  font-size:clamp(0.9rem,1vw,1.25rem);
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+}
+
+
+

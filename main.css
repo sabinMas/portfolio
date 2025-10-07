@@ -1,0 +1,154 @@
+/* main.css */
+@media screen and (min-width: 769px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*outline: 1px solid red !important;*/
+  }
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overflow: hidden;
+    cursor: url(https://cdn.glitch.global/c404e7e0-5a28-4a5f-bc05-c17110073fbd/resized_cursor_32x32.png?v=1749327409850)
+        4 2,
+      auto;
+  }
+  a,
+  button {
+    cursor: url("https://cdn.glitch.global/c404e7e0-5a28-4a5f-bc05-c17110073fbd/melted_hand_cursor_32x32.png?v=1749328194953")
+        4 2,
+      auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /*this is the main container for every page after the main page.*/
+  .scaled-container {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    min-width: 400px;
+    height: auto;
+    max-height: 49vh;
+    padding: 2rem;
+    overflow-y: auto;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    font-family: "Sixtyfour", sans-serif;
+    font-size: 0.85rem;
+    color: black;
+    margin-top: 1rem;
+    align-items: center;
+  }
+
+  .scaled-container::-webkit-scrollbar {
+    height: 6px;
+    background: transparent;
+  }
+  .scaled-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+
+  .scaled-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .embedded-project {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    border: none;
+  }
+  .back-button {
+    margin-bottom: 1rem;
+    margin-top: auto;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    line-height: 0.25;
+    font-family: "Sixtyfour", sans-serif;
+    font-weight: bold;
+    color: hsl(44 100% 0%);
+    align-self: center;
+    cursor: url("https://cdn.glitch.global/c404e7e0-5a28-4a5f-bc05-c17110073fbd/melted_hand_cursor_32x32.png?v=1749328194953")
+        4 2,
+      auto;
+  }
+
+  .back-button img {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    cursor: url("https://cdn.glitch.global/c404e7e0-5a28-4a5f-bc05-c17110073fbd/melted_hand_cursor_32x32.png?v=1749328194953")
+        4 2,
+      auto;
+  }
+
+  .back-button span {
+    display: block;
+    margin-top: 0.5%;
+    transition: opacity 0.3s ease;
+    text-align: center;
+  }
+  .back-button:hover {
+    display: block;
+    margin-top: 1.5px;
+    opacity: 0.75;
+    transition: transform 0.3s, color 0.3s;
+    transform: scale(1.25);
+  }
+
+  body.yahtzee-page {
+    color: black;
+    min-height: 100vh;
+    margin: 0;
+    background: url("https://cdn.glitch.global/c404e7e0-5a28-4a5f-bc05-c17110073fbd/PortfolioBackgroundImageCopy.PNG?v=1748547738825")
+      no-repeat center center;
+    background-size: cover;
+    font-family: "Sixtyfour", sans-serif;
+  }
+  body.yahtzee-page::-webkit-scrollbar {
+    height: 6px;
+    background: transparent;
+  }
+  body.yahtzee-page ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+
+  body.yahtzee-page::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  h1.yahtzee-page {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  p.yahtzee-page {
+    font-weight: bold;
+    margin-top: 25px;
+  }
+}

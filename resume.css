@@ -1,0 +1,205 @@
+/*resume*/
+
+body {
+  color: black;
+  min-height: 100vh;
+  margin: 0;
+  background: url("https://cdn.glitch.global/c404e7e0-5a28-4a5f-bc05-c17110073fbd/PortfolioBackgroundImageCopy.PNG?v=1748547738825")
+    no-repeat center center;
+  background-size: cover;
+  font-family: "Sixtyfour", sans-serif;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+}
+.scaled-container {
+  
+}
+.summary p {
+  font-weight: bold;
+  color: black;
+  font-size: clamp(0.9rem, 1vw, 1.25rem);
+  font-family: "Courier New", monospace;
+}
+.summary h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.summary h5 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.objective {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: auto auto;
+  column-gap: 1.25rem;
+  row-gap: 0.75rem;
+  align-items: start;
+}
+.objective-header{
+  grid-column:2;
+}
+
+.photo-box {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  width: 150px;
+  height: 275px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-top: 25%;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.objective-text {
+  display: contents;
+}
+
+/*INTRO */
+.intro {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/*CONTACT ICONS and TEXT*/
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(0.50rem, 0.99vw, 1.25rem);
+  font-weight:bold;
+}
+
+.icons-row {
+  display: flex;
+  align-items: space-between;
+  gap: 0.75rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+  margin-right: 0.05rem;
+  vertical-align: middle;
+  color: black;
+}
+.education h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.education-grid p {
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: clamp(0.9rem, 1vw, 1.25rem);
+  font-family: "Courier New", monospace;
+}
+.education-grid {
+  display: grid;
+  grid-template-columns: auto 125px;
+  gap: 2rem;
+}
+
+.personal-links h3{
+  text-align:center;
+  font-size: 10px;
+  line-height:25px;
+}
+.personal-links-list a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: clamp(1.01rem, 1vw, 1.25rem);
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+
+.personal-links-list a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.work-experience h3 {
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.work-experience li {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  line-height: 25px;
+  font-size: clamp(0.75rem, 0.95vw, 1.1rem);
+  font-weight: bold;
+}
+.work-experience p {
+  color: black;
+  font-size: clamp(1.01rem, 1vw, 1.25rem);
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+/*GRID CONTENT*/
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+.column,
+.column-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+}
+.skills-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  line-height: 35px;
+  font-size: clamp(.98rem, 1vw, 1.25rem);
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+.skills-column h3 {
+  text-align: center;
+  font-size: 15px;
+  font-family:"Sixtyfour", sans-serif;
+}
+.skills ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  margin: 0;
+ 
+}
+
+.objective p:first-of-type {
+  grid-column: 2;
+}
+
+.objective p:last-of-type {
+  grid-column: 1 / -1;
+}
+
+
+

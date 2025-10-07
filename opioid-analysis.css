@@ -1,0 +1,33 @@
+body{
+  color: black;
+  min-height: 100vh;
+  margin: 0;
+  background: url("https://cdn.glitch.global/c404e7e0-5a28-4a5f-bc05-c17110073fbd/PortfolioBackgroundImageCopy.PNG?v=1748547738825")
+    no-repeat center center;
+  background-size: cover;
+  font-family: "Sixtyfour", sans-serif;
+}
+body::-webkit-scrollbar {
+  height: 6px;
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+h1{
+  text-align: center;
+}
+p{
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom:25px;
+}
+.embedded-project{
+  min-height:450px;
+}

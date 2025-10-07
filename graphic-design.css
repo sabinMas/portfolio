@@ -1,0 +1,97 @@
+body {
+  color: black;
+  min-height: 100vh;
+  margin: 0;
+  background: url("https://cdn.glitch.global/c404e7e0-5a28-4a5f-bc05-c17110073fbd/PortfolioBackgroundImageCopy.PNG?v=1748547738825")
+    no-repeat center center;
+  background-size: cover;
+  font-family: "Sixtyfour", sans-serif;
+}
+
+/* Embedded video styling */
+.featured-video {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.featured-video video {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+  max-height: 600px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive design gallery layout */
+.design-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Flip card container */
+.design-card {
+  perspective: 1000px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+/* Inner flip logic */
+.design-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.2s ease;
+  transform-style: preserve-3d;
+}
+
+/* Trigger flip on hover */
+.design-card:hover .design-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and back of the flip card */
+.design-card-front,
+.design-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling on front */
+.design-card-front img,
+.design-card-front video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Back of card with description */
+.design-card-back {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Legacy hover styling on plain images, no longer used but safe to keep */
+.design-gallery img {
+  transition: transform 0.3s ease;
+}
+
+.design-gallery img:hover {
+  transform: scale(1.03);
+}
