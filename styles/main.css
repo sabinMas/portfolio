@@ -15,7 +15,7 @@
 
   body {
     overflow: hidden;
-    cursor: url"../graphics/myCustomCursor.png")
+    cursor: url"graphics/myCustomCursor.png"
         4 2,
       auto;
   }
