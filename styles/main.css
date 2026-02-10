@@ -90,8 +90,7 @@
     font-weight: bold;
     color: hsl(44 100% 0%);
     align-self: center;
-    cursor: url("https://cdn.glitch.global/c404e7e0-5a28-4a5f-bc05-c17110073fbd/melted_hand_cursor_32x32.png?v=1749328194953")
-        4 2,
+    cursor: url("../graphics/melted_hand_cursor_32x32.png")        4 2,
       auto;
   }
 
@@ -103,8 +102,7 @@
     cursor: pointer;
     margin: 0 auto;
     display: block;
-    cursor: url("https://cdn.glitch.global/c404e7e0-5a28-4a5f-bc05-c17110073fbd/melted_hand_cursor_32x32.png?v=1749328194953")
-        4 2,
+    cursor: url("../graphics/melted_hand_cursor_32x32.png")        4 2,
       auto;
   }
 
